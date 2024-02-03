@@ -2,11 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import RegistrationPage from './pages/register'
+import LandingPage from './pages/landing'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <h1>Hello</h1>
+    element: <LandingPage />
+  },
+  {
+    path: "/register",
+    element: <RegistrationPage />
   }
 ])
 
