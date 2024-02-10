@@ -5,7 +5,21 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins_black: ['poppins-black'],
+        poppins_regular: ['poppins-regular'],
+        poppins_bold: ['poppins-bold'],
+        poppins_semiBold: ['poppins-semiBold'],
+        poppins_medium: ['poppins-medium'],
+      },
+
+      colors:{
+        primary:"#1B51DC",
+        secondary: "#CDCDCD",
+        placeholder: "#808080"
+      }
+    },
   },
   plugins: [],
 }
