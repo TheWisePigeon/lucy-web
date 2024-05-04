@@ -17,7 +17,8 @@ export default {
       colors:{
         primary:"#1B51DC",
         secondary: "#CDCDCD",
-        placeholder: "#808080"
+        borderColor:"#D0D5DD",
+        placeholderColor:"#667085"
       }
     },
   },

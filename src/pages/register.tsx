@@ -44,16 +44,18 @@ export default function RegistrationPage() {
   return (
     <>
       <div className="h-screen flex justify-center items-center bg-[#FFFFFF]">
-        <div className="flex flex-col gap-[30px] border border-x-neutral-200 shadow  p-[55px] rounded-[8px] w-[500px] h-[550px] items-center">
+        <div className="flex flex-col gap-[20px] border border-x-neutral-200 shadow-md p-[55px] rounded-[8px] w-[500px] h-[550px] items-center">
           <div className="items-center">
-            <label className="font-poppins_semiBold text-[24px]">COMPLETER VOS INFOS</label>
+            <label className="font-poppins_semiBold text-[24px] text-blue-500">COMPLETER VOS INFOS</label>
           </div>
           <div className="flex flex-col gap-[20px]">
-            <input name="countryInput" onChange={(e) => { setCountry(e.target.value) }} type="text" className="border border-secondary outline-secondary shadow h-[42px] w-[420px] rounded-[8px] p-[14px]" placeholder="Indiquez votre pays" />
-            <input name="cityInput" onChange={(e) => { setCity(e.target.value) }} type="text" className="border border-secondary outline-secondary shadow h-[42px] w-[420px] rounded-[8px] p-[14px]" placeholder="Indiquez votre ville" />
-            <textarea name="descriptionText" onChange={(e) => { setDescription(e.target.value) }} rows={10} className="border border-secondary outline-secondary shadow min-h-[100px] h-[42px] w-[420px] rounded-[8px] p-[14px] resize-none" placeholder="Donnez une brève description de vos produits" />
-            <input name="passwordInput" onChange={(e) => { setPassword(e.target.value) }} type="password" className="border border-secondary outline-secondary shadow h-[42px] w-[420px] rounded-[8px] p-[14px]" placeholder="Votre mot de passe" />
-            <button type="submit" className="bg-primary shadow h-[42px] w-[420px] rounded-[8px] text-center text-white text-[16px] mt-6">Complèter votre inscription</button>
+            <input name="countryInput" onChange={(e) => { setCountry(e.target.value) }} type="text" className="border-[2px] border-borderColor outline-[#c5cedb] h-[42px] w-[420px] rounded-[9px] p-[14px] placeholder-placeholderColor" placeholder="Indiquez votre pays" />
+            <input name="cityInput" onChange={(e) => { setCity(e.target.value) }} type="text" className="border-[2px] border-borderColor outline-[#c5cedb]  h-[42px] w-[420px] rounded-[9px] p-[14px] placeholder-placeholderColor" placeholder="Indiquez votre ville" />
+            <textarea name="descriptionText" onChange={(e) => { setDescription(e.target.value) }} rows={10} className="border-[2px] border-borderColor outline-[#c5cedb]  min-h-[100px] h-[42px] w-[420px] rounded-[9px] p-[14px] resize-none placeholder-placeholderColor" placeholder="Donnez une brève description de vos produits" />
+            <input name="passwordInput" onChange={(e) => { setPassword(e.target.value) }} type="password" className="border-[2px] border-borderColor outline-[#c5cedb]  h-[42px] w-[420px] rounded-[9px] p-[14px] placeholder-placeholderColor" placeholder="Votre mot de passe" />
+          </div>
+          <div>
+            <button type="submit" className="bg-blue-500 shadow h-[42px] w-[420px] rounded-[9px] text-center hover:bg-blue-600 text-white text-[16px] mt-6">Compléter votre inscription</button>
           </div>
         </div>
       </div>
