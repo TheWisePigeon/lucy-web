@@ -20,12 +20,12 @@ export default function LoginPage() {
                                         <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
                                     </svg>
                                 </div>
-                                <input name="phoneInput" type="tel" className="border-[2px] border-borderColor outline-[#c5cedb] h-[42px] w-full rounded-[9px] ps-10 p-[14px]  placeholder-placeholderColor" placeholder="99999999" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" maxLength={8}/>
+                                <input name="phoneInput" type="tel" className="border-[2px] border-borderColor focus:outline-none focus:border-[#c5cedb] focus:ring-1 focus:ring-[#c5cedb] h-[42px] w-full rounded-[9px] ps-10 p-[14px]  placeholder-placeholderColor invalid:border-red-500 invalid:text-red-500  focus:invalid:border-red-500 focus:invalid:ring-red-500" placeholder="99999999" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" maxLength={8}/>
                             </div>
                         </div>
                         <div>
                             <label className="font-poppins_medium text-[12px] text-[#344054]">Mot de passe</label>
-                            <input name="password" type="password" className="border-[2px] border-borderColor outline-[#c5cedb] h-[42px] w-full rounded-[9px] p-[14px]  placeholder-placeholderColor" placeholder="votre mot de passe" />
+                            <input name="password" type="password" className="border-[2px] border-borderColor focus:outline-none focus:border-[#c5cedb] focus:ring-1 focus:ring-[#c5cedb] h-[42px] w-full rounded-[9px] p-[14px]  placeholder-placeholderColor invalid:border-red-500 invalid:text-red-500  focus:invalid:border-red-500 focus:invalid:ring-red-500" placeholder="votre mot de passe" />
                         </div>
                     </div>
                     <div className="flex flex-col gap-[5px]">
