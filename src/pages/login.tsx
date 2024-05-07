@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 export default function LoginPage() {
@@ -34,7 +35,8 @@ export default function LoginPage() {
                         </div>
                         <div className="flex flex-row gap-1 font-poppins_medium text-[12px]">
                             <label>Vous n'avez pas de compte?</label>
-                            <a href="#" className="text-blue-700 hover:text-sky-400">Créer un compte</a>
+                            <Link to="/register" className="text-blue-700 hover:text-sky-400"> 
+                           Créer un compte</Link>
                         </div>
                     </div>
                 </div>
