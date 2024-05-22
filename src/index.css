@@ -3,24 +3,29 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'poppins-black';
-    src: url("../src/assets/fonts/Poppins-Black.ttf");
+  font-family: "poppins-black";
+  src: url("../src/assets/fonts/Poppins-Black.ttf");
 }
 @font-face {
-    font-family: 'poppins-regular';
-    src: url("../src/assets/fonts/Poppins-Regular.ttf");
+  font-family: "poppins-regular";
+  src: url("../src/assets/fonts/Poppins-Regular.ttf");
 }
 @font-face {
-    font-family: 'poppins-bold';
-    src: url("../src/assets/fonts/Poppins-Bold.ttf");
+  font-family: "poppins-bold";
+  src: url("../src/assets/fonts/Poppins-Bold.ttf");
 }
 @font-face {
-    font-family: 'poppins-semiBold';
-    src: url("../src/assets/fonts/Poppins-SemiBold.ttf");
+  font-family: "poppins-semiBold";
+  src: url("../src/assets/fonts/Poppins-SemiBold.ttf");
 }
 @font-face {
-    font-family: 'poppins-medium';
-    src: url("../src/assets/fonts/Poppins-Medium.ttf");
+  font-family: "poppins-medium";
+  src: url("../src/assets/fonts/Poppins-Medium.ttf");
 }
 
-
+.max-width-container {
+    width: 87%;
+    max-width: 90rem;
+    margin-inline: auto;
+    color: white;
+}
