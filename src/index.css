@@ -24,8 +24,43 @@
 }
 
 .max-width-container {
-    width: 87%;
-    max-width: 90rem;
-    margin-inline: auto;
-    color: white;
+  width: 87%;
+  max-width: 90rem;
+  margin-inline: auto;
+  color: rgb(0, 0, 0);
+  height: 100%;
+
+  & input[type="text"] {
+    position: relative;
+    border-radius: 4px;
+    background-color: rgb(249, 249, 249);
+    border: 1px solid #667085;
+    height: 35px;
+    color: #667085;
+    padding: 5px;
+    padding-left: 35px;
+    font-weight: 400;
+    align-items: center;
+
+    &:focus-visible {
+      box-sizing: border-box;
+      border: 1px solid #0def0d;
+    }
+  }
+
+  .search {
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+  }
+
+  .icon-navabr {
+    color: #667085;
+    font-size: 20px;
+    font-weight: 500;
+  }
 }
