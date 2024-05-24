@@ -64,3 +64,46 @@
     font-weight: 500;
   }
 }
+
+.icon-menu {
+  font-size: 25px;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  padding-inline: 16px;
+  padding-block: 16px;
+  gap: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .icon-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .max-width-container .search {
+    display: none;
+  }
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #667085;
+  padding-inline: 30px;
+  padding-block: 20px;
+  gap: 20px;
+  position: absolute;
+  top: 70px;
+  border-radius: 4px;
+}
