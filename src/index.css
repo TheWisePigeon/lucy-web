@@ -23,6 +23,11 @@
   src: url("../src/assets/fonts/Poppins-Medium.ttf");
 }
 
+:root {
+
+  background-color: white;
+}
+
 .max-width-container {
   width: 87%;
   max-width: 90rem;
