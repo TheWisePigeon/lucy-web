@@ -17,8 +17,10 @@ function AddCategory() {
     <>
       <div className="bg-[#F1F4F6] px-10 py-5 ">
         <div className="flex items-center gap-4">
-          <FaArrowLeft />
-          <h2>Ajouter catégorie</h2>
+          <FaArrowLeft className="text-slate-950" />
+          <h2 className="text-2xl text-pretty text-slate-950">
+            Ajouter catégorie
+          </h2>
         </div>
       </div>
       <div className="flex flex-col gap-5 items-center mt-[8rem] add-category ">
@@ -28,7 +30,7 @@ function AddCategory() {
           className="flex flex-col gap-5"
         >
           <div className="flex flex-col gap-2">
-            <h2>nom catégorie</h2>
+            <h2 className="text-slate-950">nom catégorie</h2>
             <input
               type="text"
               onChange={(e) =>
@@ -37,7 +39,7 @@ function AddCategory() {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <h2>Description</h2>
+            <h2 className="text-slate-950">Description</h2>
             <div className="textarea-div">
               <textarea
                 id=""
@@ -48,7 +50,7 @@ function AddCategory() {
             </div>
           </div>
           <div className="flex gap-3 ">
-            <h2>Afficher ?</h2>
+            <h2 className="text-slate-950">Afficher ?</h2>
             <input
               type="checkbox"
               onChange={(e) =>
