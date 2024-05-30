@@ -169,4 +169,23 @@
       }
     }
   }
+
+  & button[type="submit"] {
+
+    background-color: rgba(17, 122, 202, 0.711);
+    padding-block: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+
+    &:hover {
+      background-color: rgba(29, 103, 159, 0.711);
+    }
+
+    &:active {
+      padding-block: 9px;
+    }
+
+  }
 }
