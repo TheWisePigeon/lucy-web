@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import AddCategory from "../components/AddCategory"
+import AddCategory from "./AddCategory"
 function Dashboard() {
   return (
     <div>
