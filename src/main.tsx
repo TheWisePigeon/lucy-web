@@ -6,25 +6,45 @@ import RegistrationPage from './pages/register'
 import LandingPage from './pages/landing'
 import LoginPage from './pages/login'
 import Dashboard from './pages/Dashboard'
+import AddCategory from './pages/AddCategory'
+import AddProduct from './pages/AddProduct'
+import ListCategory from './pages/ListCategory'
+import ListProduct from './pages/ListProduct'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LandingPage />
+    element: <LandingPage />,
   },
   {
     path: "/register",
-    element: <RegistrationPage />
+    element: <RegistrationPage />,
   },
   {
-    path:"/login",
-    element: <LoginPage />
+    path: "/login",
+    element: <LoginPage />,
   },
   {
     path: "/dashboard",
-    element: <Dashboard/>
-  }
-])
+    element: <Dashboard />,
+  },
+  {
+    path: "/add-category",
+    element: <AddCategory />,
+  },
+  {
+    path: "/add-product",
+    element: <AddProduct />,
+  },
+  {
+    path: "/list-category",
+    element: <ListCategory />,
+  },
+  {
+    path: "/list-product",
+    element: <ListProduct />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

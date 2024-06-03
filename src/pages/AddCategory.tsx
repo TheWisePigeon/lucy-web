@@ -1,5 +1,6 @@
 import { FaArrowLeft } from "react-icons/fa6";
 import { useState } from "react";
+import Navbar from "../components/Navbar";
 
 function AddCategory() {
   const [category, setCategory] = useState({
@@ -15,6 +16,7 @@ function AddCategory() {
 
   return (
     <>
+      <Navbar />
       <div className="bg-[#F1F4F6] px-10 py-5 ">
         <div className="flex items-center gap-4">
           <FaArrowLeft className="text-slate-950" />
